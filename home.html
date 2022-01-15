@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newStyle.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+  
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet"/>
+
+  <style>
+     .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left
+ }
+  </style>
+</head>
+<body>
+
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid justify-content-between">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <!-- Brand -->
+      <a class="navbar-brand me-2 mb-1 d-flex align-items-center text-primary" href="https://www.facebook.com/">
+
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <!-- Search form -->
+      <form class="input-group w-auto my-auto d-none d-sm-flex">
+        <input
+          autocomplete="off"
+          type="search"
+          class="form-control rounded"
+          placeholder="Search"
+          style="min-width: 125px;border-radius:50%;" 
+        />
+        <span class="input-group-text border-0 d-none d-lg-flex"
+          ><i class="fas fa-search"></i
+        ></span>
+      </form>
+    </div>
+    <!-- Left elements -->
+
+    <!-- Center elements -->
+    <ul class="navbar-nav flex-row d-none d-md-flex ">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link mx-3" href="#">
+          <span><i class="fas fa-home fa-lg "></i></span>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1 mx-3">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-flag fa-lg"></i></span>
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1 mx-3">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-video fa-lg"></i></span>
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1 mx-3">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-shopping-bag fa-lg"></i></span>
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1 mx-3">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-users fa-lg"></i></span>
+          <span class="badge rounded-pill badge-notification bg-danger">2</span>
+        </a>
+      </li>
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row ">
+      <li class="nav-item me-3 me-lg-1 mx-3">
+        <a class="nav-link d-sm-flex align-items-sm-center" href="new.html">
+          <img
+            src="image/mona.png"
+            class="rounded-circle"
+            height="22"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+          <strong class="d-none d-sm-block ms-1">Mona</strong>
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-plus-circle fa-lg"></i></span>
+        </a>
+      </li>
+      <li class="nav-item dropdown me-3 me-lg-1">
+        <a
+          class="nav-link dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-comments fa-lg"></i>
+
+          <span class="badge rounded-pill badge-notification bg-danger">6</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown me-3 me-lg-1">
+        <a
+          class="nav-link dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell fa-lg"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">12</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown me-3 me-lg-1">
+        <a
+          class="nav-link dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-chevron-circle-down fa-lg"></i>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Right elements -->
+  </div>
+</nav>
+<!-- Navbar -->
+
+
+
+
+
+
+<!--cards-->
+
+
+
+
+
+  <section class="container-fluid"style="margin-top:60px;">
+    
+    <div class="row ">
+        <div class="col-sm-2 col-md-5 col-lg-2 shadow bg-white rounded mx-3 " >
+            
+
+             <ul class="list-group my-2">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-user-friends text-primary"></i>
+              
+              <div class="comment-text"> <span class="username "> </span> Friends </div> 
+              <span class=" badge bg-success  rounded-pill"></span>
+             
+                
+
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-users text-primary"></i>
+              <div class="comment-text"> <span class="username "> </span> Groups </div> 
+              <span class="badge bg-success  rounded-pill"></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-map-marked text-primary"></i>
+              <div class="comment-text"> <span class="username "> </span> Marketplace </div> 
+              <span class="badge bg-success rounded-pill"></span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-desktop text-primary"></i>
+              <div class="comment-text"> <span class="username "> </span> Watch </div> 
+              <span class="badge bg-success  rounded-pill"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-memory text-secondary"></i>
+              <div class="comment-text"> <span class="username "> </span> Saved </div> 
+              <span class="badge bg-success  rounded-pill"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="fas fa-clock text-primary"></i>
+              <div class="comment-text"> <span class="username "> </span> Memories </div> 
+              <span class="badge bg-success  rounded-pill"></span>
+              </li>
+         
+
+         
+            </ul>
+        </div>
+           
+          
+           
+             
+
+         
+          
+        
+
+        <div class="col-sm-8 col-md-5 col-lg-7  bg-white rounded mx-3 my-2 "style= "height:10rem; ">
+     
+
+          <div class="card text-center">
+           
+          
+            
+
+            <div class="card-body my-3">
+              <img src="image/mona.png" alt="Avatar" class="avatar my-2">
+             
+             
+              <input  class="form-control px-1 my-2" id="floatingInputValue" placeholder="What's in your mind.." value="">
+            </div>
+            <div class="card-footer text-muted">
+            
+              <button type="button" class="btn btn-default btn-xs ">   
+                <i class="fas fa-video text-danger"></i>
+                Live video</button> <button type="button" class="btn btn-default btn-xs">
+                  <i class="fas fa-images text-success"></i> Photo/video</button>  
+                 <button type="button" class="btn btn-default btn-xs"> <i class="far fa-grin-wink text-warning"></i>Feelings</button> <span class="pull-right text-muted">
+            </div>
+           
+          </div>
+
+     
+      
+<!--post-->
+       
+<div class=" card mt-3 my-2 ">
+               
+                
+                            <div class="card mt-3 my-2">
+                                <div class="card-body" >
+                                    <div class="box-header with-border">
+                                        <div class="user-block"> <img class="img-circle" src="image/mona.png" alt="User Image"> 
+                                            <span class="username"><a href="#" data-abc="true"> Mona Mansour</a></span> <span class="description">Public - 7:30 PM Today</span> </div>
+                                        
+                                    </div>
+                                    <div class="box-body"> <img class="img-responsive pad" src="image/9.jpg" alt="Photo">
+                                      <button type="button" class="btn btn-default btn-xs">   
+                                          <i class="far fa-thumbs-up"></i> Like</button> <button type="button" class="btn btn-default btn-xs">
+                                            <i class="far fa-comment-alt"></i> Comment</button>  
+                                           <button type="button" class="btn btn-default btn-xs"> <i class="fa fa-share"></i> Share</button> <span class="pull-right text-muted">127 likes - 3 comments</span>
+                                    </div>
+                                    <div class="box-footer box-comments">
+                                        <div class="box-comment"> 
+                                            <img class="img-circle img-sm" src="image/pic-4.png" alt="User Image">
+                                            <div class="comment-text"> <span class="username"> Aya Mohamed <span class="text-muted pull-right">8:03 PM Today</span> </span> <i class="far fa-heart"></i>  <i class="far fa-heart"></i>  <i class="far fa-heart"></i> </div>
+                                        </div>
+                                        <div class="box-comment"> 
+                                            <img class="img-circle img-sm" src="image/pic-2.png" alt="User Image">
+                                            <div class="comment-text"> <span class="username"> Alaa Ashraf <span class="text-muted pull-right">8:03 PM Today</span> </span> اوعي ع الجمال <i class="far fa-heart"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="box-footer">
+                                        <form action="#" method="post"> <img class="img-responsive img-circle img-sm" src="image/mona.png" alt="Alt Text">
+                                            <div class="img-push"> <input type="text" class="form-control input-sm" placeholder="Press enter to post comment"> </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                 
+
+                
+
+          
+        </div>
+    </div>
+
+<!-- End of post -->
+      
+        <div class="col-sm-2 col-md-2 col-lg-2  bg-white rounded ">
+
+          <div class="card">
+              <div>
+                      <div class="card">
+                        <h5 class="card-header">Friend Request</h5>
+                        <div class="card-body">
+                          <img class="img-circle img-sm" src="image/pic-2.png" alt="User Image">
+                          <div class="comment-text mx-3  d-flex justify-content-between align-items-cente"> <span class="username"> </span > Esraa Ahmed </div> 
+                          <div class="d-grid gap-2 d-md-block my-2">
+                            <button class="btn btn-primary btn-sm" type="button">Confirm</button>
+                            <button class=" btn btn-dark btn-sm" type="button">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+
+<!-- contacts-->
+
+
+
+
+</section>
+
+<section class="container-fluid">
+    
+  <div class="row">
+      <div class="col-sm-2 col-md-5 col-lg-2 shadow bg-white rounded mx-3 my-3" >
+        <h5 class="card-header">Your shortcuts</h5>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <img class="img-circle img-sm" src="image/udacity9159.jpg" alt="User Image">
+          <div class="comment-text"> <span class="username "> </span> Udacity </div> 
+          <span class=" badge bg-success  rounded-pill"></span>
+         
+            
+
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <img class="img-circle img-sm" src="image/cody.jpg" alt="User Image">
+          <div class="comment-text"> <span class="username "> </span> Cody Kids academy </div> 
+          <span class="badge bg-success  rounded-pill"></span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <img class="img-circle img-sm" src="image/ITI logo.png" alt="User Image">
+          <div class="comment-text"> <span class="username "> </span> iTi </div> 
+          <span class="badge bg-success rounded-pill"></span>
+          </li>
+        </ul>
+          
+         
+         
+        </div>
+        
+        
+
+
+
+
+
+        
+      <div class="col-sm-8 col-md-5 col-lg-7 bg-white rounded mx-3 my-2 ">
+         
+  
+      
+<!--post-->
+          
+               
+
+            
+      </div>
+
+    
+
+     
+      
+      <div class="col-sm-2 col-md-2 col-lg-2  bg-white rounded ">
+
+        <div class="card">
+            <div>
+              <h5 class="card-header">Contacts</h5>
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-2.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Esraa Ahmed </div> 
+                  <span class=" badge bg-success  rounded-pill"></span>
+                 
+                    
+
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-4.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Noha Mohamed  </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-6.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Nada Magdy  </div> 
+                  <span class="badge bg-success rounded-pill"></span>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-3.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Mohamed Ali </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-4.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Aya Mohamed  </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+                
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-5.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Mansour ahmed </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-6.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Jana Mohamed  </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-4.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span>Joury Mohamed  </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <img class="img-circle img-sm" src="image/pic-2.png" alt="User Image">
+                  <div class="comment-text"> <span class="username "> </span> Maha Mohamed  </div> 
+                  <span class="badge bg-success  rounded-pill"></span>
+                  </li>
+                </ul>
+                </p>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="card card-body">
+                        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                        Some placeholder content for the second collapse component of this multi-collapse example. 
+                        This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+      </div>
+    
+  </div> 
+
+
+  
+  <div class="col-sm-2 col-md-2 col-lg-2 my-2 shadow bg-white rounded">
+    <p>
+      <div class="m-2" style="height: auto;">
+        <div class=" bd-highlight d-inline-block bg-light my-1 px-1" 
+        style="--bs-bg-opacity: 1;color: rgb(161, 161, 161);"> Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  ·   · Meta © 2022</div>
+      
+    
+   
+     </div>
+    </p>
+   </div>
+
+
+   
+
+
+</section>
+
+
+
+
+
+
+
+
+
+  <script>
+    function show()
+    {
+      document.getElementById("group").classList.toggle("d-none");
+    }
+    function mouseover()
+    {
+      document.getElementById("close").style.color="rgb(187, 181, 181)";
+    }
+    function mouseleave()
+    {
+      document.getElementById("close").style.color="black";
+    }
+    function clos()
+    {
+      
+      document.getElementById("look").classList.add("visually-hidden");
+    }
+    
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
